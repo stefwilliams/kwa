@@ -80,7 +80,16 @@
   }
 }
 
+
+
 @media (max-width: 767px) {
+  #imageholder {
+    width: 98.4%;
+    height: 260px;
+  }
+  .slide_1 img, .slide_2 img, .slide_3 img {
+    width: 31.6%;
+  }
   .hidden-desktop {
     display: inherit !important;
   }
@@ -94,7 +103,11 @@
     display: none !important;
   }
 }
-
+@media (min-width: 100px) and (max-width: 480px){
+  #imageholder {
+    height: 180px;
+  }
+}
 .visible-print {
   display: none !important;
 }

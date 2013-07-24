@@ -22,8 +22,8 @@
 			<div class="row">
 				<div class="span3">
 					<h1><?php echo bloginfo('name'); ?></h1>
-					<div class="logo">
-					</div>
+					<a href="/"><div class="logo">
+					</div></a>
 				</div>
 				<div class="span9">
 					<!-- navbar -->
@@ -31,7 +31,7 @@
 						<div class="navbar-inner">
 							<div class="container">
 								<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-								<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -42,7 +42,7 @@
 									'theme_location'  => 'navbar',
 									'menu'            => 'Main Menu', 
 									'container'       => 'div',
-									'container_class' => 'nav-collapse',
+									'container_class' => 'nav-collapse collapse',
 									'menu_class'      => 'nav', 
 				//  'fallback_cb'     => 'wp_page_menu',
 									'depth'           => 3,

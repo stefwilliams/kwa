@@ -13,6 +13,8 @@ function bootstrap_head() {
 	//wp_deregister_script('jquery'); //deregister the standard WP jquery files (and dependent files)
 	$template_path = get_template_directory_uri();
 
+    wp_deregister_script('jquery'); //remove standard jQuery in favour of Bootstrap version;
+
 	wp_register_script( 'jquery-bootstrap', $template_path.'/js/jquery.js', false, '1.9.1', false );
 	wp_enqueue_script( 'jquery-bootstrap' );
 
